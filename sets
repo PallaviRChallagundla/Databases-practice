@@ -1,1 +1,35 @@
+# Sets and Set Operations
 
+## Union (A ∪ B)
+All unique elements from both sets.
+
+Example:
+A = {1,2,3}
+B = {2,3,4}
+A ∪ B = {1,2,3,4}
+
+## Intersection (A ∩ B)
+Elements common to both sets.
+A ∩ B = {2,3}
+
+## Difference (A − B)
+Elements in A not in B.
+A − B = {1}
+
+## Cartesian Product (A × B)
+All ordered pairs (a,b) where a ∈ A, b ∈ B.
+A × B = {(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,2),(3,3),(3,4)}
+
+
+examples.sql
+-- Example: Selection
+SELECT * FROM Student WHERE Number < 3000;
+
+-- Example: Projection
+SELECT Name, Number FROM Student;
+
+-- Example: Join (Equijoin)
+SELECT s.Name, s.Number, s.Sex, t.Subject
+FROM Student s
+JOIN TeachingAssistants t
+ON s.Number = t.ID;
