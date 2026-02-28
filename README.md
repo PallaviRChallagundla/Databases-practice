@@ -8,8 +8,3 @@ This repository contains fundamental database concepts, relational algebra opera
 4. Interview Tips
 
 
-### GitHub Structure:
-Database-Concepts/
-├─ Sets/
-├─ Relational-Algebra/
-└─ README.md
