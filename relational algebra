@@ -1,1 +1,36 @@
+# Relational Algebra Examples
+
+## Selection (σ)
+σ(Number < 3000)(Student) → select rows where Number < 3000
+
+Student Table:
+Name   Number  Sex
+Nina   3412    F
+Mike   1234    M
+Nelson 2341    F
+
+Result:
+Mike   1234    M
+Nelson 2341    F
+
+## Projection (π)
+π(Name, Number)(Student)
+Result:
+Nina   3412
+Mike   1234
+Nelson 2341
+
+# Join Examples
+
+## Equijoin
+Student ⊳⊲(Number=ID) TeachingAssistants
+Result:
+Nina   3412   F   Physics
+Nelson 2341   F   Mathematics
+
+## Join Types
+- Equijoin: uses equality (=)
+- Natural join: auto-match same name columns
+- Left join: keeps unmatched left rows
+- Right join: keeps unmatched right rows
 
